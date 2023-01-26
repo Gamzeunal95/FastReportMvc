@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="01/26/2023 19:56:00" ReportInfo.Modified="01/26/2023 19:58:05" ReportInfo.CreatorVersion="2022.2.0.0">
+  <Styles Name="Standard">
+    <Style Name="Title" Font="Arial, 12pt, style=Bold"/>
+    <Style Name="Header" Font="Arial, 10pt, style=Bold"/>
+    <Style Name="Group" Font="Arial, 10pt, style=Bold"/>
+    <Style Name="Data" Font="Arial, 10pt"/>
+    <Style Name="Footer" Font="Arial, 10pt"/>
+    <Style Name="EvenRows" Fill.Color="WhiteSmoke" Font="Arial, 10pt"/>
+  </Styles>
+  <Dictionary>
+    <MsSqlDataConnection Name="Connection" ConnectionString="rijcmlqJUrEa/KIcQqhhcfnlqC6PC6b70ltOmTeLWh2vhAF0ivYvQZbcY/A8qTXhAWsZJeFGEPA9xrXyYOG3aFk4+m5VDVpVP/FQxXT5tusPY8IAca52k9WiwL1/WYSLVgXxh55JkR8mlLQ4J1cQJLBHJ2fWqVt412w4hq+ADLYfpMQ6FXoQus62YDwrmo92+EH6qIF9h3Jvdgj0pXclXoGXwPPIA==">
+      <TableDataSource Name="Customers" DataType="System.Int32" Enabled="true" TableName="Customers">
+        <Column Name="CustomerID" DataType="System.String"/>
+        <Column Name="CompanyName" DataType="System.String"/>
+        <Column Name="ContactName" DataType="System.String"/>
+        <Column Name="ContactTitle" DataType="System.String"/>
+        <Column Name="Address" DataType="System.String"/>
+        <Column Name="City" DataType="System.String"/>
+        <Column Name="Region" DataType="System.String"/>
+        <Column Name="PostalCode" DataType="System.String"/>
+        <Column Name="Country" DataType="System.String"/>
+        <Column Name="Phone" DataType="System.String"/>
+        <Column Name="Fax" DataType="System.String"/>
+      </TableDataSource>
+    </MsSqlDataConnection>
+  </Dictionary>
+  <ReportPage Name="Page1" Watermark.Font="Arial, 60pt">
+    <ReportTitleBand Name="ReportTitle1" Width="718.2" Height="37.8">
+      <TextObject Name="Text1" Width="718.2" Height="37.8" Dock="Fill" Text="Customers" HorzAlign="Center" VertAlign="Center" Font="Arial, 12pt, style=Bold" Style="Title"/>
+    </ReportTitleBand>
+    <PageHeaderBand Name="PageHeader1" Top="41.8" Width="718.2" Height="28.35">
+      <TextObject Name="Text3" Width="103.95" Height="18.9" Text="CustomerID" Font="Arial, 10pt, style=Bold" Style="Header"/>
+      <TextObject Name="Text5" Left="103.95" Width="103.95" Height="18.9" Text="CompanyName" Font="Arial, 10pt, style=Bold" Style="Header"/>
+      <TextObject Name="Text7" Left="207.9" Width="103.95" Height="18.9" Text="ContactName" Font="Arial, 10pt, style=Bold" Style="Header"/>
+      <TextObject Name="Text9" Left="311.85" Width="103.95" Height="18.9" Text="ContactTitle" Font="Arial, 10pt, style=Bold" Style="Header"/>
+      <TextObject Name="Text11" Left="415.8" Width="103.95" Height="18.9" Text="Address" Font="Arial, 10pt, style=Bold" Style="Header"/>
+      <TextObject Name="Text13" Left="519.75" Width="103.95" Height="18.9" Text="City" Font="Arial, 10pt, style=Bold" Style="Header"/>
+      <TextObject Name="Text15" Left="623.7" Width="94.5" Height="18.9" Text="Country" Font="Arial, 10pt, style=Bold" Style="Header"/>
+    </PageHeaderBand>
+    <DataBand Name="Data1" Top="74.15" Width="718.2" Height="18.9" EvenStyle="EvenRows" DataSource="Customers">
+      <TextObject Name="Text2" Width="103.95" Height="18.9" Text="[Customers.CustomerID]" Font="Arial, 10pt" Style="Data"/>
+      <TextObject Name="Text4" Left="103.95" Width="103.95" Height="18.9" Text="[Customers.CompanyName]" Font="Arial, 10pt" Style="Data"/>
+      <TextObject Name="Text6" Left="207.9" Width="103.95" Height="18.9" Text="[Customers.ContactName]" Font="Arial, 10pt" Style="Data"/>
+      <TextObject Name="Text8" Left="311.85" Width="103.95" Height="18.9" Text="[Customers.ContactTitle]" Font="Arial, 10pt" Style="Data"/>
+      <TextObject Name="Text10" Left="415.8" Width="103.95" Height="18.9" Text="[Customers.Address]" Font="Arial, 10pt" Style="Data"/>
+      <TextObject Name="Text12" Left="519.75" Width="103.95" Height="18.9" Text="[Customers.City]" Font="Arial, 10pt" Style="Data"/>
+      <TextObject Name="Text14" Left="623.7" Width="94.5" Height="18.9" Text="[Customers.Country]" Font="Arial, 10pt" Style="Data"/>
+    </DataBand>
+    <PageFooterBand Name="PageFooter1" Top="97.05" Width="718.2" Height="18.9">
+      <TextObject Name="Text16" Width="718.2" Height="18.9" Dock="Fill" Text="[PageN]" HorzAlign="Right" Font="Arial, 10pt" Style="Footer"/>
+    </PageFooterBand>
+  </ReportPage>
+</Report>
