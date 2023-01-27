@@ -1,3 +1,4 @@
+using FastReport.Data;
 using FastReportMvc.Entities;
 using Microsoft.EntityFrameworkCore;
 
@@ -12,9 +13,8 @@ namespace FastReportMvc
             // Add services to the container.
             builder.Services.AddControllersWithViews();
 
-            builder.Services.AddControllers();
+            FastReport.Utils.RegisteredObjects.AddConnection(typeof(MsSqlDataConnection));
             builder.Services.AddDbContext<NorthwindContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("Northwind")));
-
 
             var app = builder.Build();
 
@@ -30,7 +30,7 @@ namespace FastReportMvc
             app.UseStaticFiles();
 
             app.UseRouting();
-
+            app.UseFastReport();
             app.UseAuthorization();
 
             app.MapControllerRoute(
