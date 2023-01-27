@@ -20,6 +20,8 @@
 
 - Northwind databasei scaffold edildi. `dotnet ef dbcontext scaffold "Server=(localdb)\mssqllocaldb;Database=Northwind;Trusted_Connection=True" Microsoft.EntityFrameWorkCore.SqlServer -o Entities`
 
-- Controller 
+- **Controller** 
   - CustomerController
   - CategoryController
+- **Views** 
+  - Controller'lar için Views oluşturuldu.
