@@ -1,10 +1,7 @@
 # FastReportMvc
 
-\\11.0.17.160\Paylas 
-Hocanın pc ye bağlanmak için
-https://www.syncfusion.com/
-
-DevExpress ve syncfusion reporting raporlama işlerinizde de kullanabileceğimiz toollardır.
+- https://www.syncfusion.com/
+- DevExpress ve syncfusion reporting raporlama işlerinizde de kullanabileceğimiz alternatif toollardır.
 
 # Project 1 - FastReportMvc
 
