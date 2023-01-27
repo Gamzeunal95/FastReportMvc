@@ -19,6 +19,7 @@ DevExpress ve syncfusion reporting raporlama işlerinizde de kullanabileceğimiz
   - Microsoft.EntityFrameworkCore
   - Microsoft.EntityFrameworkCoreDesign
   - Microsoft.EntityFrameworkCore.SqlServer
+  - FastReport.OpenSource.Export.PdfSimple
 
 - Northwind databasei scaffold edildi. `dotnet ef dbcontext scaffold "Server=(localdb)\mssqllocaldb;Database=Northwind;Trusted_Connection=True" Microsoft.EntityFrameWorkCore.SqlServer -o Entities`
 
